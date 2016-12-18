@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--
+			1、向NAV标签添加class .navbar .navbar-default
+			2、向上面的元素添加role="navigation",有助于增加可访问性
+			3、向div元素添加一个标题class .navbar-header，内部包含了带有class navbar-brand的<a>元素，让文本看起来更大号
+			4、为了向导航栏添加链接，只需要简单的添加带有class .nav .navbar-nav这个无需列表即可
+		-->
+		<!--<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="" class="navbar-brand">邢帅教育</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="" >photoshow</a></li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							WEB开发
+							<b class="caret"></b>	
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="">HTML5</a></li>
+								<li><a href="">CSS3</a></li>
+								<li><a href="">Javascript</a></li>
+							</ul>
+						</li>
+						<li><a href="">PHP</a></li>
+						<li><a href="">LINUX</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>-->
+		
+		<!--
+			必须带有class .collapse .navbar-collapse
+			折叠起来的导航栏必须是一个带有class .navbar-toggle以及两个data-元素的按钮
+			data-toggle，第二个是data-target(指示要切换到哪一个元素)
+			（可以单独下载Collapse插件）
+		-->
+		
+		<!--
+			导航栏表单
+			class .navbar-form
+			导航栏按钮
+			class .navbar-btn
+			(不要在.navbar-nav的a标签里使用.navbar-btn，因为它不是的button class)
+		-->
+		<!--
+			固定到顶部：请向.navbar class添加 class .navbar-fixed-top/.navbar-fixed-bottom
+			静态的顶部：.navbar-static-top
+		-->
+		
+		<div class="nav navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#">
+						<img src="img/logo1.png"/>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">首页</a></li>
+						<li><a href="">WEB直播</a></li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+								网站开发
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="">HTML5</a></li>
+								<li><a href="">WEB</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="navbar-form navbar-right">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="输入搜索词" name="" id="" value="" />
+							<div class="input-group-btn">
+								<button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span>搜索</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="height: 70px;"></div>
+		<!--列表页开始-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="list-group">
+						<div class="list-group-item" style="border: none;">
+							<a href="" ><h4 class="wow bounceInLeft"  data-wow-delay='0s'  style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p  class="wow bounceInLeft"  data-wow-delay='0.1s'>
+								<small><span>发布时间：2016-07-12</span></small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p class="wow bounceInLeft"  data-wow-delay='0.3s'>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p class="wow bounceInLeft"  data-wow-delay='0.4s'><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div class="wow bounceInLeft"  data-wow-delay='0.5s' style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						
+						
+						
+						<div class="list-group-item wow rubberBand" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						
+						
+						<div class="list-group-item wow wobble" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						
+						<div class="list-group-item wow fadeInLeft" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						
+						<div class="list-group-item wow zoomInLeft" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						<div class="list-group-item wow flipInX" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						<div class="list-group-item wow bounceInLeft" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						<div class="list-group-item wow rollIn" style="border: none;">
+							<a href="" ><h4 style="color:#0f0f0f; font-weight: 800;">特朗普和希拉里谁成为了美国总统</h4></a>
+							<p>
+								<small>发布时间：2016-07-12</small>
+								<small class="pull-right">点击量：<span class="badge">10</span></small>
+								<p>自Iphone和Android这两个牛逼的手机操作系统发布以来，在互联网界从此就多了一个新的名词-Web App(意为基于WEB形式的应用程序)。业界关于Web App与Native App的争论已有一段时间，而Hybrid混合App则受到推荐，随着时间的推移，我们相信Web App也会有一定的市场</p>
+								<p><span class="badge">总统</span><span>&nbsp;</span><span class="badge">美国</span></p>
+							</p>
+							<div style="border-bottom: 1px dashed #ccc;"></div>
+						</div>
+						
+						
+					</div>
+					<!--分页-->
+					<div class="text-center wow slideInLeft" data-wow-duration='2s' data-wow-delay='0s'>
+						<ul class="pagination">
+							<li><a href="">&laquo;</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">&raquo;</a></li>
+						</ul>
+					</div>
+					<!--分页END-->
+				</div>
+				
+				<div class="col-md-4">
+					<div class="panel panel-success wow lightSpeedIn">
+						<div class="panel-heading">
+							<strong>热点信息</strong>
+							<small class="pull-right"><a href="" class="text-muted">更多</a></small>
+						</div>
+						<div class="panel-body">
+							<h4><strong class="panel-title">邢帅教育喜迎搬迁</strong></h4>
+							<p>广州马拉松公司的三个深度国际安山东干就啥都if就是滴哦规划iOS送个花撒都关机死哦的感觉神雕规划</p>
+						</div>
+					</div>
+					
+					
+					<div class="panel panel-primary wow shake">
+						<div class="panel-heading">
+							<strong>热点信息</strong>
+							<small class="pull-right"><a href="" class="text-danger">更多</a></small>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					
+					
+					
+					<div class="thumbnail wow fadeInLeft">
+							<img src="img/pic1.jpg"/>
+					</div>
+					
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<strong>热点信息</strong>
+							<small class="pull-right"><a href="" class="text-danger">更多</a></small>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+							<li class="list-group-item">
+								<a href="">广州是个大城市，所以房价贵</a>
+							</li>
+						</ul>
+					</div>
+					
+					
+					
+					<div class="panel panel-warning wow tada">
+						<div class="panel-heading">
+							<strong>爆炸新闻</strong>
+							<small class="pull-right"><a href="" class="text-info">查看更多</a></small>
+						</div>
+						<ul class="list-group media-list">
+							<li class="list-group-item">
+								<div class="media">
+									<div class="media-left">
+										<img src="img/hhx.jpg"/>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading"><strong>邢帅教育web开发直播</strong></h4>
+										<p>搜狐公交公司地方   啥地方就偶是地感觉是吊柜就搜房是的窘境嘎斯欧国家死哦几个搜到 时间段共is见到过iOS</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+					
+					<div class="thumbnail wow fadeInRightBig">
+							<img src="img/pic1.jpg"/>
+					</div>
+					
+					<div class="panel panel-warning wow bounceInRight" data-wow-offset='200' data-wow-iteration='10'>
+						<div class="panel-heading">
+							<strong>爆炸新闻</strong>
+							<small class="pull-right"><a href="" class="text-info">查看更多</a></small>
+						</div>
+						<ul class="list-group media-list">
+							<li class="list-group-item">
+								<div class="media">
+									<div class="media-left">
+										<img src="img/hhx.jpg"/>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading"><strong>邢帅教育web开发直播</strong></h4>
+										<p>搜狐公交公司地方   啥地方就偶是地感觉是吊柜就搜房是的窘境嘎斯欧国家死哦几个搜到 时间段共is见到过iOS</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>		
+		
+		<script type="text/javascript">
+			new WOW().init();
+		</script>
+	</body>
+</html>
